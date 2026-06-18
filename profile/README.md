@@ -2,6 +2,8 @@
 
 <a href="https://www.mantek.io"><img src="https://www.mantek.io/assets/apple-touch-icon.png" alt="ManTek Technologies" width="84" /></a>
 
+# ManTek Technologies
+
 ### Human logic. Scalable technology.
 
 Full-stack WordPress & web engineering — with **WordPress + AWS** at scale.
