@@ -1,0 +1,11 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Report a security vulnerability
+    url: mailto:security@mantek.io
+    about: Please email this rather than opening a public issue. See SECURITY.md.
+  - name: Read the write-up behind the plugin
+    url: https://www.mantek.io/insights
+    about: Each plugin has an article explaining the problem it solves and its known limits.
+  - name: Talk to ManTek
+    url: https://www.mantek.io/contact
+    about: For work enquiries rather than issues with the code.
