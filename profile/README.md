@@ -1,6 +1,6 @@
 <div align="center">
 
-<a href="https://www.mantek.io"><img src="https://www.mantek.io/assets/apple-touch-icon.png" alt="ManTek Technologies" width="84" /></a>
+<a href="https://www.mantek.io"><img src="./github-banner.png" alt="ManTek Technologies. Human logic. Scalable technology. WordPress + AWS at newsroom scale, Dubai." width="100%" /></a>
 
 # ManTek Technologies
 
@@ -8,7 +8,7 @@
 
 Full-stack WordPress & web engineering, with **WordPress + AWS** at scale.
 
-[Website](https://www.mantek.io) · [Insights](https://www.mantek.io/insights) · [Contact](https://www.mantek.io/contact) · [LinkedIn](https://www.linkedin.com/company/mantekio)
+[Website](https://www.mantek.io) · [Insights](https://www.mantek.io/insights) · [Contact](https://www.mantek.io/contact) · [LinkedIn](https://www.linkedin.com/company/mantekio) · [Packagist](https://packagist.org/packages/mantekio/)
 
 </div>
 
@@ -27,9 +27,31 @@ We specialise in **WordPress engineering**, and where a site has to hold nationa
 - **Hosting, domains, DNS & email · security & maintenance**: the full operational layer, run properly.
 - **NUZ**: our cloud-native publishing platform for high-traffic newsrooms.
 
-### What you'll find here
+### Open source
 
-This is where we open-source the **generically useful** parts of our engineering (plugins, utilities, and the code behind our [Insights](https://www.mantek.io/insights) write-ups), so you can read it, use it, and build on it. Client work and our production architecture stay private; the reusable tools live here.
+Every plugin here came out of a problem we hit in production, and every one is paired with the write-up that explains it. Read the article to understand the failure, install the plugin to fix it.
+
+| Plugin | The problem it solves | The write-up |
+|---|---|---|
+| **[wp-arabic-search](https://github.com/mantekio/wp-arabic-search)** <br> `v0.9.3` | WordPress compares Arabic byte for byte, so one word spelled two ways never matches. On a real archive that meant 1 result where there were 28,238. | [Arabic search in WordPress: the matches it silently misses](https://www.mantek.io/insights/wordpress-arabic-search) |
+| **[wp-arabic-slug-schema-guard](https://github.com/mantekio/wp-arabic-slug-schema-guard)** <br> `v1.3.0` | A routine core update silently truncates long Arabic URLs, and by the time the 404s appear the data is gone. | [The 200-byte trap: why WordPress core updates break Arabic URLs](https://www.mantek.io/insights/wordpress-arabic-slug-truncation) |
+| **[wp-edge-images](https://github.com/mantekio/wp-edge-images)** <br> `v1.0.0` | Every image size is generated on upload, instead of served on the fly from the edge. | [Make WordPress do less: offloading media to S3 and the edge](https://www.mantek.io/insights/wordpress-s3-media-pipeline) |
+| **[wp-fleet-cron](https://github.com/mantekio/wp-fleet-cron)** <br> `v0.9.0` | Behind a load balancer, wp-cron silently misses schedule. | [WordPress cron behind a load balancer: fixing 'Missed schedule'](https://www.mantek.io/insights/wordpress-cron-load-balancer) |
+| **[wp-ses-mail](https://github.com/mantekio/wp-ses-mail)** <br> `v0.9.0` | WordPress reports the mail as sent when it never left the server. | [Your WordPress says the email sent. It didn't.](https://www.mantek.io/insights/wordpress-email-ses) |
+
+All GPL-2.0, all must-use plugins, all on Packagist under `mantekio/`:
+
+```bash
+composer require mantekio/wp-arabic-search
+```
+
+Two of the five exist only because **Arabic breaks WordPress in ways English never surfaces**. That is not a niche problem: it is most of the web's right-to-left traffic, and almost nobody upstream is testing for it.
+
+Client work and our production architecture stay private. The generically useful parts live here.
+
+### Also here
+
+**[syria-government-design-system](https://github.com/mantekio/syria-government-design-system)** is not code. It is an independent analysis, in English and Arabic, of how a national government design system for Syria could be built, benchmarked against fourteen international government design systems. Published under CC BY 4.0 as the companion to [the write-up of the same name](https://www.mantek.io/insights/syria-government-design-system). Not affiliated with, authorised by, or endorsed by the Syrian government.
 
 ### Writing
 
