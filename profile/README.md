@@ -33,11 +33,11 @@ Every plugin here came out of a problem we hit in production, and every one is p
 
 | Plugin | The problem it solves | The write-up |
 |---|---|---|
-| **[wp-arabic-search](https://github.com/mantekio/wp-arabic-search)** <br> `v0.9.3` | WordPress compares Arabic byte for byte, so one word spelled two ways never matches. On a real archive that meant 1 result where there were 28,238. | [Arabic search in WordPress: the matches it silently misses](https://www.mantek.io/insights/wordpress-arabic-search) |
-| **[wp-arabic-slug-schema-guard](https://github.com/mantekio/wp-arabic-slug-schema-guard)** <br> `v1.3.0` | A routine core update silently truncates long Arabic URLs, and by the time the 404s appear the data is gone. | [The 200-byte trap: why WordPress core updates break Arabic URLs](https://www.mantek.io/insights/wordpress-arabic-slug-truncation) |
-| **[wp-edge-images](https://github.com/mantekio/wp-edge-images)** <br> `v1.0.0` | Every image size is generated on upload, instead of served on the fly from the edge. | [Make WordPress do less: offloading media to S3 and the edge](https://www.mantek.io/insights/wordpress-s3-media-pipeline) |
-| **[wp-fleet-cron](https://github.com/mantekio/wp-fleet-cron)** <br> `v0.9.0` | Behind a load balancer, wp-cron silently misses schedule. | [WordPress cron behind a load balancer: fixing 'Missed schedule'](https://www.mantek.io/insights/wordpress-cron-load-balancer) |
-| **[wp-ses-mail](https://github.com/mantekio/wp-ses-mail)** <br> `v0.9.0` | WordPress reports the mail as sent when it never left the server. | [Your WordPress says the email sent. It didn't.](https://www.mantek.io/insights/wordpress-email-ses) |
+| **[wp-arabic-search](https://github.com/mantekio/wp-arabic-search)** | WordPress compares Arabic byte for byte, so one word spelled two ways never matches. On a real archive that meant 1 result where there were 28,238. | [Arabic search in WordPress: the matches it silently misses](https://www.mantek.io/insights/wordpress-arabic-search) |
+| **[wp-arabic-slug-schema-guard](https://github.com/mantekio/wp-arabic-slug-schema-guard)** | A routine core update silently truncates long Arabic URLs, and by the time the 404s appear the data is gone. | [The 200-byte trap: why WordPress core updates break Arabic URLs](https://www.mantek.io/insights/wordpress-arabic-slug-truncation) |
+| **[wp-edge-images](https://github.com/mantekio/wp-edge-images)** | Every image size is generated on upload, instead of served on the fly from the edge. | [Make WordPress do less: offloading media to S3 and the edge](https://www.mantek.io/insights/wordpress-s3-media-pipeline) |
+| **[wp-fleet-cron](https://github.com/mantekio/wp-fleet-cron)** | Behind a load balancer, wp-cron silently misses schedule. | [WordPress cron behind a load balancer: fixing 'Missed schedule'](https://www.mantek.io/insights/wordpress-cron-load-balancer) |
+| **[wp-ses-mail](https://github.com/mantekio/wp-ses-mail)** | WordPress reports the mail as sent when it never left the server. | [Your WordPress says the email sent. It didn't.](https://www.mantek.io/insights/wordpress-email-ses) |
 
 All GPL-2.0, all must-use plugins, all on Packagist under `mantekio/`:
 
